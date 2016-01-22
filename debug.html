@@ -24,6 +24,16 @@
     </video>
 
     <script>
+
+        videojs.options.p2pConfig = {
+            streamrootKey: "ry-fzsvdiyk",
+            debug: true,
+        };
+
+        videojs.options.hlsjsConfig = {
+            debug: true
+        };
+
         var player = videojs('example-video');
         // player.play();
     </script>
