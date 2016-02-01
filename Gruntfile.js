@@ -8,12 +8,12 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         browserify: {
             main: {
-                src: 'lib/videojs.hls.js',
-                dest: 'debug/videojs.hls.js'
+                src: 'lib/vjs-hls.js',
+                dest: 'debug/vjs-hls.js'
             }
         },
         watch: {
-            files: 'lib/videojs.hls.js',
+            files: 'lib/vjs-hls.js',
             tasks: ['browserify']
         }
     });
