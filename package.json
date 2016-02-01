@@ -32,6 +32,7 @@
     "grunt-contrib-watch": "latest",
     "grunt-shell": "^1.1.2",
     "matchdep": "0.3.0",
-    "uglifyify": "^3.0.1"
+    "uglifyify": "^3.0.1",
+    "video.js": "^5.5.3"
   }
 }
