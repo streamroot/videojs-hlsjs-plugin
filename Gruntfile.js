@@ -10,12 +10,12 @@ module.exports = function(grunt) {
                 src: 'lib/vjs-hls.js',
                 dest: 'debug/vjs-hls.js',
                 options:  {
-                   transform: ['babelify'],
-                   browserifyOptions: {
-                       debug: true
-                   },
-                   watch: true,
-                   keepAlive: true
+                  transform: ['babelify'],
+                  browserifyOptions: {
+                      debug: true
+                  },
+                  watch: true,
+                  keepAlive: true
                }
             }
         }
