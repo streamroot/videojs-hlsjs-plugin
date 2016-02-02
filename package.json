@@ -14,11 +14,6 @@
   },
   "dependencies": {
     "hls.js": "git+ssh://git@github.com:dailymotion/hls.js.git#v0.4.3",
-    "hlsjs-wrapper": "1.0.7",
-    "streamroot-media": "1.7.6",
-    "streamroot-qos-analytics": "1.0.10",
-    "ua-parser-js": "0.7.9",
-    "videoEventPolyfill": "git+ssh://git@bitbucket.org/sharevicomplet/videoeventpolyfill.git"
     "babelify": "^6.1.3"
   },
   "devDependencies": {
