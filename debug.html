@@ -23,12 +23,15 @@
     </video>
 
     <script>
-
-        videojs.options.hlsjsConfig = {
-            debug: true
+        var options = {
+            html5: {
+                hlsjsConfig: {
+                    debug: true
+                }
+            }
         };
+        var player = videojs('example-video', options);
 
-        var player = videojs('example-video');
         player.qualityPickerPlugin();
     </script>
 
