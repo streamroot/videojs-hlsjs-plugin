@@ -6,6 +6,8 @@ Adds HLS playback support to [video.js 5.0+](https://github.com/videojs/video.js
 
 Use Grunt to build vjs-hls.js from the sources.
 
+Use `grunt build`to build the dist scripts.
+
 ## Usage
 
 Include video.js and vjs-hls.js in your page:
