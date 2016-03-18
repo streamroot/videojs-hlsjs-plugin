@@ -13,7 +13,7 @@
     ]
   },
   "dependencies": {
-    "hls.js": "https://github.com/dailymotion/hls.js.git#v0.4.7",
+    "hls.js": "^0.5.15",
     "babelify": "^6.1.3"
   },
   "devDependencies": {
