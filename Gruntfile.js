@@ -10,7 +10,6 @@ module.exports = function(grunt) {
                 src: 'lib/vjs-hls.js',
                 dest: 'debug/vjs-hls.js',
                 options:  {
-                    transform: ['babelify'],
                     browserifyOptions: {
                         debug: true
                     },
@@ -22,7 +21,6 @@ module.exports = function(grunt) {
                 src: 'lib/vjs-hls.js',
                 dest: 'dist/vjs-hls.js',
                 options:  {
-                    transform: ['babelify'],
                     browserifyOptions: {
                         debug: false,
                     },
