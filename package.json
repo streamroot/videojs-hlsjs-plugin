@@ -21,6 +21,7 @@
     "grunt-browserify": "4.0.1",
     "grunt-contrib-uglify": "^1.0.0",
     "matchdep": "0.3.0",
-    "video.js": "^5.5.3"
+    "video.js": "^5.5.3",
+    "videojs-quality-picker": "^0.0.1"
   }
 }
