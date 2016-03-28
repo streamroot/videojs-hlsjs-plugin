@@ -13,7 +13,7 @@
     ]
   },
   "dependencies": {
-    "hls.js": "^0.5.15",
+    "hls.js": "^0.5.17",
     "babelify": "^6.1.3"
   },
   "devDependencies": {
