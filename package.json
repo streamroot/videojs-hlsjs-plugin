@@ -14,14 +14,14 @@
   },
   "dependencies": {
     "hls.js": "^0.5.17",
-    "babelify": "^6.1.3"
+    "babelify": "^6.1.3",
+    "videojs-quality-picker": "^0.0.1"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-browserify": "4.0.1",
     "grunt-contrib-uglify": "^1.0.0",
     "matchdep": "0.3.0",
-    "video.js": "5.5.3",
-    "videojs-quality-picker": "^0.0.1"
+    "video.js": "5.5.3"
   }
 }
