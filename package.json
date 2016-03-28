@@ -6,7 +6,6 @@
   },
   "version": "0.0.1",
   "main": "./lib/videojs.hls.js",
-  "scripts": {},
   "dependencies": {
     "hls.js": "^0.5.17",
     "videojs-quality-picker": "^0.0.2"
