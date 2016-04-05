@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         browserify: {
             main: {
-                src: 'lib/vjs-hls.js',
+                src: 'lib/main.js',
                 dest: 'debug/vjs-hls.js',
                 options:  {
                     browserifyOptions: {
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
                 }
             },
             dist: {
-                src: 'lib/vjs-hls.js',
+                src: 'lib/main.js',
                 dest: 'dist/vjs-hls.js',
                 options:  {
                     browserifyOptions: {
