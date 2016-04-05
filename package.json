@@ -5,7 +5,7 @@
     "email": "contact@streamroot.io"
   },
   "version": "0.0.1",
-  "main": "./lib/videojs.hls.js",
+  "main": "./lib/main.js",
   "publishConfig":{
     "registry":"https://registry.npmjs.org/"
   },
