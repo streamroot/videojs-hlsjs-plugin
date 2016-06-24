@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "hls.js": "^0.5.17",
-    "videojs-quality-picker": "^0.0.2"
+    "videojs-quality-picker": "^0.0.3"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
