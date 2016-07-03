@@ -4,7 +4,8 @@ Adds HLS playback support to [video.js 5.0+](https://github.com/videojs/video.js
 
 ## Installation
 
-Clone the repository.
+Clone the repository. 
+Install the dependcies `npm istall`.
 Use `grunt build`to build the dist scripts.
 
 ## Usage
