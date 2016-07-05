@@ -13,6 +13,11 @@
     "hls.js": "^0.5.17",
     "videojs-quality-picker": "^0.0.3"
   },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:streamroot/videojs5-hlsjs-source-handler"
+  },
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-browserify": "4.0.1",
