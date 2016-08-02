@@ -24,7 +24,7 @@ dependencies:
 
 test:
     override:
-        - "No tests specified"
+        - echo "No tests specified"
 
 deployment:
     features:
