@@ -8,7 +8,7 @@ module.exports = function(grunt) {
         browserify: {
             main: {
                 src: 'lib/main.js',
-                dest: 'debug/vjs-hls.js',
+                dest: 'debug/videojs5-hlsjs-source-handler.js',
                 options:  {
                     browserifyOptions: {
                         debug: true
@@ -19,7 +19,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 src: 'lib/main.js',
-                dest: 'dist/vjs-hls.js',
+                dest: 'dist/videojs5-hlsjs-source-handler.js',
                 options:  {
                     browserifyOptions: {
                         debug: false,
@@ -39,7 +39,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'dist/vjs-hls.min.js': 'dist/vjs-hls.js'
+                    'dist/videojs5-hlsjs-source-handler.min.js': 'dist/videojs5-hlsjs-source-handler.js'
                 }
             }
         }

@@ -10,13 +10,13 @@ Use `grunt build`to build the dist scripts.
 
 ## Usage
 
-Include video.js and vjs-hls.js in your page:
+Include video.js and videojs5-hlsjs-source-handler in your page:
 
 ```html
 <head>
     <link href="http://vjs.zencdn.net/5.0/video-js.min.css" rel="stylesheet">
     <script src="http://vjs.zencdn.net/5.0/video.min.js"></script>
-    <script src="vjs-hls.js"></script>
+    <script src="videojs5-hlsjs-source-handler"></script>
 </head>
 
 <body>
