@@ -55,7 +55,7 @@ deployment:
             - toolkit/set_version.rb --version $(toolkit/current_version.rb --beta ${CIRCLE_BUILD_NUM})
 
             # Generate dist
-            - npm run build
+            - grunt browserify:dist
             - toolkit/add_banner.rb --file dist/$DIST_FILE
                                     --deploy_env staging
                                     --version $(toolkit/current_version.rb)
@@ -104,7 +104,7 @@ deployment:
             - rm -rf dist
 
             # Generate dist
-            - npm run build
+            - grunt browserify:dist
             - toolkit/add_banner.rb --file dist/$DIST_FILE
                                     --version $(toolkit/current_version.rb)
                                     --dependencies hls.js
