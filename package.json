@@ -6,8 +6,8 @@
   },
   "version": "0.1.0-beta.0",
   "main": "./lib/main.js",
-  "publishConfig":{
-    "registry":"https://registry.npmjs.org/"
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
     "hls.js": "^0.5.17",
