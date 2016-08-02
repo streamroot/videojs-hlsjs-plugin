@@ -4,10 +4,10 @@
     "name": "Streamroot",
     "email": "contact@streamroot.io"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./lib/main.js",
-  "publishConfig":{
-    "registry":"https://registry.npmjs.org/"
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
     "hls.js": "^0.5.17",
