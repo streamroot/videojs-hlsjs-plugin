@@ -10,7 +10,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "hls.js": "^0.5.17",
+    "hls.js": "^0.5.42",
     "videojs-quality-picker": "^0.0.3"
   },
   "license": "MIT",
