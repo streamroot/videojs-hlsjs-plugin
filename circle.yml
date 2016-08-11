@@ -112,7 +112,7 @@ deployment:
             - cp dist/$DIST_FILE $CIRCLE_ARTIFACTS/$DIST_FILE
 
             # Upload version
-            - toolkit/upload_to_s3.rb --bucket $S3_PREPROD_BUCKET
+            - toolkit/upload_to_s3.rb --bucket $S3_PREPROD_NOP2P_BUCKET
                                       --region eu-west-1
                                       --file $CIRCLE_ARTIFACTS/$DIST_FILE
                                       --destinations $CIRCLE_PROJECT_REPONAME/$(toolkit/current_version.rb --major)/$DIST_FILE

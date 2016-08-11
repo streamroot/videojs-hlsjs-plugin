@@ -9,4 +9,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Starting loading before play (now loads when media element requests data)
 
 ## [Unreleased]
+### Changed
+- Distribute preprod build in a specific no p2p bucket
 
