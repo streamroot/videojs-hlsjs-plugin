@@ -5,6 +5,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Dev]
 
 ## [Unreleased]
+### Changed
+- Dumping full dependencies tree to package.lock
 
 ## [0.0.7] - 2016-08-11
 ### Fixed
