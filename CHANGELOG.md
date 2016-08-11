@@ -5,4 +5,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Dev]
 
 ## [Unreleased]
+### Changed
+- Distribute preprod build in a specific no p2p bucket
 
