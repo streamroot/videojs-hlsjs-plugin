@@ -1,0 +1,17 @@
+{ "authors": [
+    "Streamroot <contact@streamroot.io>"
+  ],
+  "dependencies": {
+    "hls.js": "^0.5.17"
+  },
+  "homepage": "https://github.com/streamroot/videojs5-hlsjs-source-handler",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "license": "MIT",
+  "main": "./lib/main.js",
+  "name": "videojs5-hlsjs-source-handler",
+  "version": "0.0.8"
+}
