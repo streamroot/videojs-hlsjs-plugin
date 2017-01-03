@@ -12,6 +12,7 @@
   ],
   "license": "MIT",
   "main": "./lib/main.js",
+  "moduleType": "es6",
   "name": "videojs5-hlsjs-source-handler",
   "version": "0.0.8"
 }
