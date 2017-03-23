@@ -3,12 +3,12 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Dev]
-
 ### Fixed
-
 - Starting loading before play (now loads when media element requests data)
 
 ## [Unreleased]
+### Changed
+- Depend on hls.js v0.6.21
 
 ## [0.0.8] - 2016-08-11
 ### Changed
