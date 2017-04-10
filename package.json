@@ -4,13 +4,13 @@
     "name": "Streamroot",
     "email": "contact@streamroot.io"
   },
-  "version": "0.0.8",
+  "version": "0.1.0-beta.0",
   "main": "./lib/main.js",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "hls.js": "^0.5.17",
+    "hls.js": "^0.6.21",
     "videojs-quality-picker": "^0.0.3"
   },
   "license": "MIT",
