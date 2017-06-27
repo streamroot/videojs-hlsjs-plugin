@@ -8,6 +8,15 @@ Clone the repository.
 Install the dependcies `npm install`.
 Use `grunt build`to build the dist scripts.
 
+## Quality picker
+
+[Quality picker](https://github.com/streamroot/videojs-quality-picker) is integrated into this source handler. If you want to have quality selection menu in your player, call `qualityPickerPlugin()` method on video.js player right after initializing the player, like this:
+
+```javascript
+var player = videojs('example-video');
+player.qualityPickerPlugin();
+```
+
 ## Usage
 
 Include video.js and videojs5-hlsjs-source-handler in your page:
@@ -25,6 +34,7 @@ Include video.js and videojs5-hlsjs-source-handler in your page:
     </video>
     <script>
         var player = videojs('example-video');
+        player.qualityPickerPlugin();
     </script>
 </script>
 </body>
@@ -47,5 +57,6 @@ Define `hlsjsConfig` property in `html5` field of video.js options object and pa
         }
     };
     var player = videojs('example-video', options);
+    player.qualityPickerPlugin();
 </script>
 ```
