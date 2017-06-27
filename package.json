@@ -4,7 +4,7 @@
     "name": "Streamroot",
     "email": "contact@streamroot.io"
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "./lib/main.js",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
