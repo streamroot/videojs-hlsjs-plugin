@@ -5,6 +5,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Dev]
 
 ## [Unreleased]
+### Changed
+- `console.error` replaced by `console.warn` for logging lack of hls.js support.
 
 ## [0.1.0] - 2017-04-10
 ### Changed
