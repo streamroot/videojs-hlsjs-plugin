@@ -5,6 +5,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Dev]
 
 ## [Unreleased]
+
+## [0.1.2] - 2017-06-27
 ### Changed
 - `console.error` replaced by `console.warn` for logging lack of hls.js support.
 
@@ -27,3 +29,4 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Distribute preprod build in a specific no p2p bucket
 
+[0.1.2]: https://github.com/streamroot/videojs5-hlsjs-source-handler/compare/v0.1.0...v0.1.2
