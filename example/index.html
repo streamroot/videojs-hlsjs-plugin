@@ -5,10 +5,10 @@
     <title>Video.js hls.js Streamroot Integration</title>
 
     <!-- video.js -->
-    <link href="./node_modules/video.js/dist/video-js.css" rel="stylesheet">
-    <script src="./node_modules/video.js/dist/video.js"></script>
+    <link href="../node_modules/video.js/dist/video-js.css" rel="stylesheet">
+    <script src="../node_modules/video.js/dist/video.js"></script>
 
-    <script src="./dist/videojs5-hlsjs-source-handler.js"></script>
+    <script src="../dist/videojs5-hlsjs-source-handler.js"></script>
 </head>
 <body>
     <video id="example-video" width="600" height="300" class="video-js vjs-default-skin" controls>
@@ -24,7 +24,7 @@
             }
         };
         var player = videojs('example-video', options);
-        player.qualityPickerPlugin();
+        player.qualityPickerPlugin(); // initializing quality picker
     </script>
 </body>
 </html>
