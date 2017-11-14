@@ -30,3 +30,4 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Distribute preprod build in a specific no p2p bucket
 
 [0.1.2]: https://github.com/streamroot/videojs5-hlsjs-source-handler/compare/v0.1.0...v0.1.2
+[0.1.3]: https://github.com/streamroot/videojs5-hlsjs-source-handler/compare/v0.1.2...v0.1.3
