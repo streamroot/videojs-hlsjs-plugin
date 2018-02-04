@@ -2,7 +2,7 @@
     "Streamroot <contact@streamroot.io>"
   ],
   "dependencies": {
-    "hls.js": "^0.7.4"
+    "hls.js": "^0.8.2"
   },
   "homepage": "https://github.com/streamroot/videojs5-hlsjs-source-handler",
   "ignore": [
