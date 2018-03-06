@@ -18,8 +18,7 @@
     "@streamroot/hlsjs-dna-wrapper": "^0.2.0",
     "hls.js": "^0.8.9",
     "lodash.defaults": "4.2.0",
-    "url-parse": "1.2.0",
-    "videojs-quality-picker": "0.0.3"
+    "url-parse": "1.2.0"
   },
   "license": "MIT",
   "repository": {
