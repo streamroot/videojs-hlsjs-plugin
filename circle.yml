@@ -1,0 +1,11 @@
+machine:
+    node:
+        version: 7
+    ruby:
+        version: 2.2.0
+    environment:
+        PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
+
+test:
+    override:
+        - echo "no tests"
