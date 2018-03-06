@@ -6,6 +6,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.2.0] - 2018-03-06
+### Changed
+- Use `Webpack` as build tool.
+- Update provider codes.
+
+### Removed
+- Bundled `videojs-quality-picker`.
+
 ## [0.1.2] - 2017-06-27
 ### Changed
 - `console.error` replaced by `console.warn` for logging lack of hls.js support.
