@@ -6,6 +6,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.2.1] - 2018-03-07
+### Fixed
+- Infinite recursion loop in provider `dispose`.
+
 ## [0.2.0] - 2018-03-06
 ### Changed
 - Use `Webpack` as build tool.
