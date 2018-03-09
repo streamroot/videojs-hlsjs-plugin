@@ -1,7 +1,7 @@
 node_modules/
 tmp/
 debug/
-dist/
 .ruby-version
 toolkit/
-
+package-lock.json
+yarn.lock
