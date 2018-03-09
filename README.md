@@ -35,7 +35,7 @@ There are several ways of getting video.js files, you can read about them [in of
 
 ### Passing configuration options to hls.js
 
-Define `hlsjsConfig` property in `html5` field of video.js options object and pass it as second param to videojs constructor. List of available hls.js options [is here](https://github.com/dailymotion/hls.js/blob/master/API.md#fine-tuning):
+Define `hlsjsConfig` property in `html5` field of video.js options object and pass it as second param to videojs constructor. List of available hls.js options [is here](https://github.com/video-dev/hls.js/blob/master/doc/API.md#fine-tuning):
 
 ```javascript
 <script>
