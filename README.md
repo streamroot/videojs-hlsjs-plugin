@@ -1,6 +1,6 @@
 # video.js HLS Source Handler
 
-Adds HLS playback support to [video.js 5.0+](https://github.com/videojs/video.js) using [Dailymotion's hls.js library](https://github.com/dailymotion/hls.js).
+Adds HLS playback support to [video.js 5.0+](https://github.com/videojs/video.js) using [hls.js library](https://github.com/video-dev/hls.js/).
 
 ## Installation
 
