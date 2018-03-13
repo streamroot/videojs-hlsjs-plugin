@@ -4,18 +4,9 @@ Adds HLS playback support to [video.js 5.0+](https://github.com/videojs/video.js
 
 ## Installation
 
-Clone the repository. 
+Clone the repository.
 Install the dependcies `npm install`.
-Use `grunt build`to build the dist scripts.
-
-## Quality picker
-
-[Quality picker](https://github.com/streamroot/videojs-quality-picker) is integrated into this source handler. If you want to have quality selection menu in your player, call `qualityPickerPlugin()` method on video.js player right after initializing the player, like this:
-
-```javascript
-var player = videojs('example-video');
-player.qualityPickerPlugin();
-```
+Use `npm run build` to build the dist scripts.
 
 ## Usage
 
@@ -34,7 +25,6 @@ Include video.js and videojs5-hlsjs-source-handler.js in your page:
     </video>
     <script>
         var player = videojs('example-video');
-        player.qualityPickerPlugin();
     </script>
 </script>
 </body>
@@ -45,7 +35,7 @@ There are several ways of getting video.js files, you can read about them [in of
 
 ### Passing configuration options to hls.js
 
-Define `hlsjsConfig` property in `html5` field of video.js options object and pass it as second param to videojs constructor. List of available hls.js options [is here](https://github.com/dailymotion/hls.js/blob/master/API.md#fine-tuning):
+Define `hlsjsConfig` property in `html5` field of video.js options object and pass it as second param to videojs constructor. List of available hls.js options [is here](https://github.com/video-dev/hls.js/blob/master/docs/API.md#fine-tuning):
 
 ```javascript
 <script>
