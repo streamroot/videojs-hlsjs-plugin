@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Dev]
+### Changed
+- `uglify-js` version bumped to `2.6.0` to fix security vulnerability.
 
 ## [Unreleased]
 
