@@ -1,7 +1,14 @@
+#
+debug/
 node_modules/
 tmp/
-debug/
-.ruby-version
-toolkit/
+npm-debug.log
+
+# lock files
 package-lock.json
 yarn.lock
+
+# CI
+bridge/
+toolkit/
+.ruby-version

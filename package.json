@@ -1,13 +1,16 @@
 {
   "name": "videojs5-hlsjs-source-handler",
+  "version": "0.2.0-beta.0",
+  "main": "./lib/main.js",
+  "homepage": "www.streamroot.io",
   "author": {
     "name": "Streamroot",
     "email": "contact@streamroot.io"
   },
-  "version": "0.2.0-beta.0",
-  "main": "./lib/main.js",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:streamroot/videojs5-hlsjs-source-handler"
   },
   "scripts": {
     "build": "webpack --progress",
@@ -19,11 +22,6 @@
     "hls.js": "^0.8.9",
     "lodash.defaults": "4.2.0",
     "url-parse": "1.2.0"
-  },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:streamroot/videojs5-hlsjs-source-handler"
   },
   "devDependencies": {
     "babel-core": "6.26.0",
