@@ -1,4 +1,5 @@
 #
+dist/
 debug/
 node_modules/
 tmp/
