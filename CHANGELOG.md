@@ -3,8 +3,17 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Dev]
+### Added
+- ESLint
+- CircleCI build file to automatize build deployment to CDN and NPM.
+- Hls.js lifecycle hooks.
+
 ### Changed
 - `uglify-js` version bumped to `2.6.0` to fix security vulnerability.
+- Freezed versions of most `devDepenndecies` to avoid potential CI issues.
+
+### Removed
+- Custom multibitrate streams handling logic for videojs-quality-picker. It will come back later implemented according to `html5` `VideoTracks`.
 
 ## [Unreleased]
 
