@@ -24,7 +24,20 @@ Include video.js and videojs-hlsjs-source-handler.js in your page:
         <source src="http://sample.vodobox.net/skate_phantom_flex_4k/skate_phantom_flex_4k.m3u8" type="application/x-mpegURL">
     </video>
     <script>
-        var player = videojs('example-video');
+        var options = {
+            html5: {
+                hlsjsConfig: {
+                  // Put your hls.js config here
+                }
+            }
+        };
+
+        // setup beforeinitialize hook
+        videojs.Html5Hlsjs.addHook('beforeinitialize', (videojsPlayer, hlsjsInstance) => {
+            // here you can interact with hls.js instance and/or video.js playback is initialized
+        });
+
+        var player = videojs('example-video', options);
     </script>
 </script>
 </body>
