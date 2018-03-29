@@ -10,13 +10,13 @@ Use `npm run build` to build the dist scripts.
 
 ## Usage
 
-Include video.js and videojs5-hlsjs-source-handler.js in your page:
+Include video.js and videojs-hlsjs-source-handler.js in your page:
 
 ```html
 <head>
     <link href="http://vjs.zencdn.net/5.0/video-js.min.css" rel="stylesheet">
     <script src="http://vjs.zencdn.net/5.0/video.min.js"></script>
-    <script src="videojs5-hlsjs-source-handler.js"></script>
+    <script src="videojs-hlsjs-source-handler.js"></script>
 </head>
 
 <body>
@@ -47,6 +47,5 @@ Define `hlsjsConfig` property in `html5` field of video.js options object and pa
         }
     };
     var player = videojs('example-video', options);
-    player.qualityPickerPlugin();
 </script>
 ```
