@@ -49,3 +49,26 @@ Define `hlsjsConfig` property in `html5` field of video.js options object and pa
     var player = videojs('example-video', options);
 </script>
 ```
+
+### Initialization Hook
+
+Sometimes you may need to extend hls.js, or have access to the hls.js before playback starts. For these cases, you can register a function to the `beforeinitialize` hook, which will be called right after hls.js instance is created.
+
+Your function should have two parameters:
+ 1. The video.js Player instance
+ 2. The hls.js instance
+
+```javascript
+var callback = function(videojsPlayer, hlsjs) {
+  // do something
+};
+
+videojs.Html5Hlsjs.addHook('beforeinitialize', callback);
+```
+
+You can remove the hook by:
+```javascript
+videojs.Html5Hlsjs.removeHook('beforeinitialize', callback);
+```
+
+You can add as many `beforeinitialize` hooks as necessary by calling `videojs.Html5Hlsjs.addHook` several times.

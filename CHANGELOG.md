@@ -6,7 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - ESLint
 - CircleCI build file to automatize build deployment to CDN and NPM.
-- Hls.js lifecycle hooks.
+- Hls.js pre init hook.
 
 ### Changed
 - `uglify-js` version bumped to `2.6.0` to fix security vulnerability.
