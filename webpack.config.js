@@ -1,88 +1,88 @@
+const path = require('path');
 const webpack = require('webpack');
+
 const { version } = require('./package.json');
 
-const isDev = process.env.NODE_ENV === 'development';
+const sourcePath = path.resolve(__dirname, 'lib/');
+const distPath = path.resolve(__dirname, 'dist/');
 
-const plugins = [
-    new webpack.DefinePlugin({
-        __VERSION__: JSON.stringify(`v${version}`)
-    })
-];
+module.exports = (env) => {
+    let nodeEnv = 'production';
 
-const rules = [{
-    exclude: /node_modules/,
-    use: 'babel-loader',
-    test: /\.js$/
-}];
-
-if (!isDev) {
-    plugins.push(
-        new webpack.optimize.OccurrenceOrderPlugin(true),
-        new webpack.LoaderOptionsPlugin({
-            minimize: true,
-            debug: false,
-        }),
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false,
-                screw_ie8: true,
-                conditionals: true,
-                unused: true,
-                comparisons: true,
-                sequences: true,
-                dead_code: true,
-                evaluate: true,
-                if_return: true,
-                join_vars: true,
-                drop_console: true,
-            },
-            mangle: true,
-            output: {
-                comments: false,
-            },
-        })
-    );
-}
-
-module.exports = {
-    entry: './lib/main.js',
-    output: {
-        path: __dirname + '/dist',
-        filename: 'videojs5-hlsjs-source-handler.js',
-        publicPath: '/dist',
-    },
-    module: {
-        rules
-    },
-    plugins,
-    performance: !isDev && {
-        hints: 'warning',
-    },
-    stats: {
-        colors: {
-            green: '\u001b[32m'
-        }
-    },
-
-    devServer: {
-        contentBase: __dirname,
-        historyApiFallback: true,
-        port: 8080,
-        compress: false,
-        inline: true,
-        stats: {
-            assets: true,
-            children: true,
-            chunks: false,
-            hash: false,
-            modules: false,
-            publicPath: false,
-            timings: true,
-            version: false,
-            warnings: true,
-            colors: {
-                green: '\u001b[32m'
-            }
-        }
+    if (env && env.development) {
+        nodeEnv = 'development';
+    } else if (env && env.staging) {
+        nodeEnv = 'staging';
+    } else if (env && env.features) {
+        nodeEnv = 'features';
     }
+
+    const isDev = nodeEnv === 'development';
+
+    const plugins = [
+        new webpack.DefinePlugin({
+            _VERSION_: JSON.stringify(version),
+        }),
+    ];
+
+    if (!isDev) {
+        plugins.push(
+            new webpack.LoaderOptionsPlugin({
+                minimize: true,
+                debug: false,
+            }),
+            new webpack.optimize.UglifyJsPlugin({
+                compress: {
+                    warnings: false,
+                    screw_ie8: true,
+                    conditionals: true,
+                    unused: true,
+                    comparisons: true,
+                    sequences: true,
+                    dead_code: true,
+                    evaluate: true,
+                    if_return: true,
+                    join_vars: true,
+                    drop_console: true,
+                    // pure_funcs: ['console.log', 'console.info', 'console.warn'],
+                },
+                mangle: true,
+                output: {
+                    comments: false,
+                },
+            })
+        );
+    }
+
+    return {
+        devtool: isDev && 'inline-source-map',
+        entry: path.resolve(sourcePath, 'main.js'),
+        target: 'web',
+        output: {
+            path: distPath,
+            filename: 'videojs-hlsjs-source-handler.js',
+            publicPath: '/dist',
+        },
+        module: {
+            rules: [{
+                test: /\.js$/,
+                exclude: [
+                    /node_modules/,
+                ],
+                use: ['babel-loader'],
+            }],
+        },
+
+        plugins,
+
+        performance: !isDev && {
+            hints: 'warning',
+        },
+
+        stats: {
+            colors: {
+                green: '\u001b[32m',
+            },
+        },
+    };
 };
