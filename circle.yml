@@ -27,6 +27,7 @@ dependencies:
 test:
     override:
         - npm run test:lint
+        - npm run build
         # TODO: tests
 
 deployment:
