@@ -43,8 +43,7 @@ module.exports = (env) => {
                     evaluate: true,
                     if_return: true,
                     join_vars: true,
-                    drop_console: true,
-                    // pure_funcs: ['console.log', 'console.info', 'console.warn'],
+                    pure_funcs: ['console.log', 'console.info', 'console.warn'],
                 },
                 mangle: true,
                 output: {
