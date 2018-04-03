@@ -61,6 +61,7 @@ module.exports = (env) => {
             path: distPath,
             filename: 'videojs-hlsjs-source-handler.js',
             publicPath: '/dist',
+            libraryTarget: 'umd',
         },
         module: {
             rules: [{
