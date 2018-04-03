@@ -9,7 +9,7 @@ Install the dependcies `npm install`.
 Use `npm run build` to build the dist scripts.
 
 ## Usage
-
+### CDN
 Include video.js and videojs-hlsjs-source-handler.js in your page:
 
 ```html
@@ -45,6 +45,15 @@ Include video.js and videojs-hlsjs-source-handler.js in your page:
 ```
 
 There are several ways of getting video.js files, you can read about them [in official documentation](http://videojs.com/getting-started/) and choose the one that match your needs best.
+
+### NPM
+
+```javascript
+const videojs = require('video.js');
+const videojsHlsjsSourceHandler = require('videojs-hlsjs-source-handler');
+
+videojsHlsjsSourceHandler.register(videojs);
+```
 
 ### Passing configuration options to hls.js
 
