@@ -10,10 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - `uglify-js` version bumped to `2.6.0` to fix security vulnerability.
-- Freezed versions of most `devDepenndecies` to avoid potential CI issues.
-
-### Removed
-- Custom multibitrate streams handling logic for videojs-quality-picker. It will come back later implemented according to `html5` `VideoTracks`.
+- Freezed versions of most `devDependencies` to avoid potential CI issues.
 
 ## [Unreleased]
 
