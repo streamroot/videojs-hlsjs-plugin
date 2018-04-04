@@ -1,0 +1,30 @@
+{
+    "extends": "airbnb-base/legacy",
+    "globals": {
+        "_VERSION_": true
+    },
+    "rules": {
+        "func-names": 0,
+        "indent": ["error", 4, {
+            "FunctionDeclaration": {
+                "parameters": 1,
+                "body": 1
+            },
+            "FunctionExpression": {
+                "parameters": 1,
+                "body": 1
+            },
+            "outerIIFEBody": 1,
+            "SwitchCase": 1,
+            "VariableDeclarator": 1
+        }],
+        "max-len": 0,
+        "no-console": 0,
+        "no-mixed-operators": 0,
+        "no-param-reassign": 0,
+        "no-plusplus": 0,
+        "no-underscore-dangle": 0,
+        "one-var": 0,
+        "vars-on-top": 0
+    },
+}

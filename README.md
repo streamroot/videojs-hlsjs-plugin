@@ -9,14 +9,14 @@ Install the dependcies `npm install`.
 Use `npm run build` to build the dist scripts.
 
 ## Usage
-
-Include video.js and videojs5-hlsjs-source-handler.js in your page:
+### CDN
+Include video.js and videojs-hlsjs-plugin.js in your page:
 
 ```html
 <head>
     <link href="http://vjs.zencdn.net/5.0/video-js.min.css" rel="stylesheet">
     <script src="http://vjs.zencdn.net/5.0/video.min.js"></script>
-    <script src="videojs5-hlsjs-source-handler.js"></script>
+    <script src="videojs-hlsjs-plugin.js"></script>
 </head>
 
 <body>
@@ -24,7 +24,20 @@ Include video.js and videojs5-hlsjs-source-handler.js in your page:
         <source src="http://sample.vodobox.net/skate_phantom_flex_4k/skate_phantom_flex_4k.m3u8" type="application/x-mpegURL">
     </video>
     <script>
-        var player = videojs('example-video');
+        var options = {
+            html5: {
+                hlsjsConfig: {
+                  // Put your hls.js config here
+                }
+            }
+        };
+
+        // setup beforeinitialize hook
+        videojs.Html5Hlsjs.addHook('beforeinitialize', (videojsPlayer, hlsjsInstance) => {
+            // here you can interact with hls.js instance and/or video.js playback is initialized
+        });
+
+        var player = videojs('example-video', options);
     </script>
 </script>
 </body>
@@ -32,6 +45,15 @@ Include video.js and videojs5-hlsjs-source-handler.js in your page:
 ```
 
 There are several ways of getting video.js files, you can read about them [in official documentation](http://videojs.com/getting-started/) and choose the one that match your needs best.
+
+### NPM
+
+```javascript
+const videojs = require('video.js');
+const videojsHlsjsSourceHandler = require('videojs-hlsjs-plugin');
+
+videojsHlsjsSourceHandler.register(videojs);
+```
 
 ### Passing configuration options to hls.js
 
@@ -47,6 +69,28 @@ Define `hlsjsConfig` property in `html5` field of video.js options object and pa
         }
     };
     var player = videojs('example-video', options);
-    player.qualityPickerPlugin();
 </script>
 ```
+
+### Initialization Hook
+
+Sometimes you may need to extend hls.js, or have access to the hls.js before playback starts. For these cases, you can register a function to the `beforeinitialize` hook, which will be called right after hls.js instance is created.
+
+Your function should have two parameters:
+ 1. The video.js Player instance
+ 2. The hls.js instance
+
+```javascript
+var callback = function(videojsPlayer, hlsjs) {
+  // do something
+};
+
+videojs.Html5Hlsjs.addHook('beforeinitialize', callback);
+```
+
+You can remove the hook by:
+```javascript
+videojs.Html5Hlsjs.removeHook('beforeinitialize', callback);
+```
+
+You can add as many `beforeinitialize` hooks as necessary by calling `videojs.Html5Hlsjs.addHook` several times.
