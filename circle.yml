@@ -88,7 +88,7 @@ deployment:
             - toolkit/post_changelog.rb   --project $CIRCLE_PROJECT_REPONAME
                                           --env staging
                                           --subtitle _Rompopopom_
-                                          --channel $SLACK_STAGING_CHANNEL
+                                          --channel $SLACK_ACTIVITY_CHANNEL
                                           --slack-token $SLACK_TOKEN
                                           --username Rihanna
                                           --icon-url https://pbs.twimg.com/profile_images/3630440066/534fcdee974c7311d13aa2a2e3381bb6.jpeg
@@ -111,7 +111,7 @@ deployment:
                                         --skip_ci
                                         --avoid_files package.json
                                         --project_name $CIRCLE_PROJECT_REPONAME
-                                        --slack_channel team-integrations
+                                        --slack_channel $SLACK_ACTIVITY_CHANNEL
                                         --slack_token $SLACK_TOKEN
                                         --post_username Rihanna
                                         --post_icon_url https://pbs.twimg.com/profile_images/3630440066/534fcdee974c7311d13aa2a2e3381bb6.jpeg
@@ -167,7 +167,7 @@ deployment:
             - toolkit/post_changelog.rb   --project $CIRCLE_PROJECT_REPONAME
                                           --env preprod
                                           --subtitle _Rompopopom_
-                                          --channel $SLACK_PREPROD_CHANNEL
+                                          --channel $SLACK_RELEASE_CHANNEL
                                           --slack-token $SLACK_TOKEN
                                           --username Rihanna
                                           --icon-url https://pbs.twimg.com/profile_images/3630440066/534fcdee974c7311d13aa2a2e3381bb6.jpeg
