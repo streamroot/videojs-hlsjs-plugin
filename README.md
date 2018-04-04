@@ -10,13 +10,13 @@ Use `npm run build` to build the dist scripts.
 
 ## Usage
 ### CDN
-Include video.js and videojs-hlsjs-source-handler.js in your page:
+Include video.js and videojs-hlsjs-plugin.js in your page:
 
 ```html
 <head>
     <link href="http://vjs.zencdn.net/5.0/video-js.min.css" rel="stylesheet">
     <script src="http://vjs.zencdn.net/5.0/video.min.js"></script>
-    <script src="videojs-hlsjs-source-handler.js"></script>
+    <script src="videojs-hlsjs-plugin.js"></script>
 </head>
 
 <body>
@@ -50,7 +50,7 @@ There are several ways of getting video.js files, you can read about them [in of
 
 ```javascript
 const videojs = require('video.js');
-const videojsHlsjsSourceHandler = require('videojs-hlsjs-source-handler');
+const videojsHlsjsSourceHandler = require('videojs-hlsjs-plugin');
 
 videojsHlsjsSourceHandler.register(videojs);
 ```

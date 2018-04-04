@@ -53,7 +53,7 @@ deployment:
             # Build package.json
             - toolkit/build_dist_package.rb --version $(toolkit/current_version.rb)
                                             --main ./dist/$CIRCLE_PROJECT_REPONAME.js
-                                            --name videojs-hlsjs-source-handler
+                                            --name $CIRCLE_PROJECT_REPONAME
                                             -o dist/package.json
 
             # Publish
@@ -128,7 +128,7 @@ deployment:
             # Build package.json
             - toolkit/build_dist_package.rb --version $(toolkit/current_version.rb)
                                             --main ./dist/$CIRCLE_PROJECT_REPONAME.js
-                                            --name videojs-hlsjs-source-handler
+                                            --name $CIRCLE_PROJECT_REPONAME
                                             -o dist/package.json
 
             # Publish

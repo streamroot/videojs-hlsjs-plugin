@@ -1,5 +1,5 @@
 {
-  "name": "videojs-hlsjs-source-handler",
+  "name": "videojs-hlsjs-plugin",
   "version": "0.3.0-beta.0",
   "main": "./lib/main.js",
   "homepage": "www.streamroot.io",
@@ -10,7 +10,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:streamroot/videojs-hlsjs-source-handler"
+    "url": "git@github.com:streamroot/videojs-hlsjs-plugin"
   },
   "scripts": {
     "build": "webpack --progress",
