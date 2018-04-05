@@ -14,8 +14,9 @@ Include video.js and videojs-hlsjs-plugin.js in your page:
 
 ```html
 <head>
-    <link href="http://vjs.zencdn.net/5.0/video-js.min.css" rel="stylesheet">
-    <script src="http://vjs.zencdn.net/5.0/video.min.js"></script>
+    <link href="http://vjs.zencdn.net/6.6.3/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/6.6.3/video.js"></script>
+
     <script src="videojs-hlsjs-plugin.js"></script>
 </head>
 
