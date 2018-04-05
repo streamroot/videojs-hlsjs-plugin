@@ -5,6 +5,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Dev]
 
 ## [Unreleased]
+### Fixed
+- Video.js >=5.0.0 < 5.3.0 compatibility (missing `getTech` method).
 
 ## [0.3.0] - 2018-04-04
 ### Added
