@@ -13,13 +13,13 @@ Use `npm run build` to build the dist scripts.
 Include video.js and videojs-hlsjs-plugin.js in your page:
 
 ```html
+<html>
 <head>
     <link href="http://vjs.zencdn.net/6.6.3/video-js.css" rel="stylesheet">
     <script src="http://vjs.zencdn.net/6.6.3/video.js"></script>
 
     <script src="videojs-hlsjs-plugin.js"></script>
 </head>
-
 <body>
     <video id=example-video width=600 height=300 class="video-js vjs-default-skin" controls>
         <source src="http://sample.vodobox.net/skate_phantom_flex_4k/skate_phantom_flex_4k.m3u8" type="application/x-mpegURL">
@@ -40,7 +40,6 @@ Include video.js and videojs-hlsjs-plugin.js in your page:
 
         var player = videojs('example-video', options);
     </script>
-</script>
 </body>
 </html>
 ```
