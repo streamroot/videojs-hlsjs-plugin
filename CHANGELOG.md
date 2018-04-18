@@ -5,6 +5,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Dev]
 
 ## [Unreleased]
+### Fixed
+- Potential conflict with other HLS plugins.
 
 ## [0.3.1] - 2018-04-05
 ### Fixed
