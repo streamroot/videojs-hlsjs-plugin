@@ -4,6 +4,10 @@ Adds HLS playback support to [video.js 5.0+](https://github.com/videojs/video.js
 
 ## Installation
 
+A pre-built version is available: https://cdn.streamroot.io/videojs-hlsjs-plugin/1/stable/videojs-hlsjs-plugin.js
+
+## Manually build the plugin
+
 Clone the repository.
 Install the dependcies `npm install`.
 Use `npm run build` to build the dist scripts.
