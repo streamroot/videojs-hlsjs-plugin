@@ -5,6 +5,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Dev]
 
 ## [Unreleased]
+
+## [0.3.3] - 2018-05-29
 ### Added
 - Allow Hls.js config to be passed through VideoJS plugin config. (For Brightcove where we don't pass options directly)
 
@@ -66,3 +68,4 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 [0.3.0]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v0.2.1...v0.3.0
 [0.3.1]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v0.3.0...v0.3.1
 [0.3.2]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v0.3.1...v0.3.2
+[0.3.3]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v0.3.2...v0.3.3
