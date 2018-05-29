@@ -5,6 +5,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Dev]
 
 ## [Unreleased]
+### Added
+- Allow Hls.js config to be passed through VideoJS plugin config. (For Brightcove where we don't pass options directly)
 
 ## [0.3.2] - 2018-04-19
 ### Added
