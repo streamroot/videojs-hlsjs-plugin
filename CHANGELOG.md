@@ -5,6 +5,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Dev]
 
 ## [Unreleased]
+### Added
+- Handle multiple audio switching.
+
+### Fixed
+- Subtitles working but is impossible to turn off or switching.
 
 ## [0.3.3] - 2018-05-29
 ### Added
