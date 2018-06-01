@@ -8,8 +8,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Handle multiple audio switching.
 
+### Changed
+- Delay emitting `loadedqualitydata` until the video starts playing.
+
 ### Fixed
 - Subtitles working but is impossible to turn off or switching.
+- Video quality data is reported before handlers is registered in `videojs-quality-picker`.
 
 ## [0.3.3] - 2018-05-29
 ### Added
