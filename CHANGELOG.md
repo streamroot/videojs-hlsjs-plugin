@@ -5,6 +5,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Dev]
 
 ## [Unreleased]
+
+## [0.3.4] - 2018-06-07
 ### Added
 - Handle multiple audio switching.
 
@@ -78,3 +80,4 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 [0.3.1]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v0.3.0...v0.3.1
 [0.3.2]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v0.3.1...v0.3.2
 [0.3.3]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v0.3.2...v0.3.3
+[0.3.4]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v0.3.3...v0.3.4
