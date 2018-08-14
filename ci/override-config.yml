@@ -1,20 +1,6 @@
-# build:
-#   dependencies:
-#     '@streamroot/version-injected-dep':
-#       - regexp: /^master$/
-#         version: rc
-#       - regexp: /^.+/
-#         version: beta
-#     '@streamroot/header-only-dep': ~
-
 deploy:
   vtag-npm-mappings:
     - regexp: ~
       tag: rc
     - regexp: /^beta$/
       tag: beta
-
-# bridge:
-#   bridge-targets:
-#     - target-repo-name-1
-#     - target-repo-name-2
