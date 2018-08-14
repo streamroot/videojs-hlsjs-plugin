@@ -16,6 +16,7 @@
     "build": "webpack --progress",
     "build:dev": "cross-env NODE_ENV=development webpack --progress --watch",
     "dev": "cross-env NODE_ENV=development webpack-dev-server -d",
+    "test": "npm run test:lint",
     "test:lint": "eslint lib/"
   },
   "dependencies": {
