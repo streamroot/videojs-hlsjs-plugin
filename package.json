@@ -1,6 +1,6 @@
 {
   "name": "videojs-hlsjs-plugin",
-  "version": "0.3.4",
+  "version": "0.4.0-beta.0",
   "main": "./lib/main.js",
   "homepage": "www.streamroot.io",
   "author": {
@@ -16,13 +16,16 @@
     "build": "webpack --progress",
     "build:dev": "cross-env NODE_ENV=development webpack --progress --watch",
     "dev": "cross-env NODE_ENV=development webpack-dev-server -d",
+    "test": "npm run test:lint",
     "test:lint": "eslint lib/"
   },
   "dependencies": {
-    "hls.js": "^0.8.9"
+    "hls.js": "^0.8.9",
+    "lodash.defaults": "4.2.0",
+    "url-parse": "1.2.0"
   },
   "devDependencies": {
-    "ajv": "6.4.0",
+    "ajv": "^6.4.0",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
     "babel-preset-es2015": "6.24.1",
@@ -31,6 +34,7 @@
     "eslint-config-airbnb-base": "12.1.0",
     "eslint-plugin-import": "2.8.0",
     "uglify-js": "2.6.0",
+    "video.js": "^5.20.5",
     "webpack": "3.8.1",
     "webpack-dev-server": "2.11.2"
   }

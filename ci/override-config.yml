@@ -1,0 +1,6 @@
+deploy:
+  vtag-npm-mappings:
+    - regexp: ~
+      tag: rc
+    - regexp: /^beta$/
+      tag: beta
