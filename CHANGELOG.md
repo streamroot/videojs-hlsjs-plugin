@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [0.4.0] - 2018-08-14
 ### Changed
 - Replace CI v1 script with new CI v2 toolkit.
 
@@ -81,3 +83,4 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 [0.3.2]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v0.3.1...v0.3.2
 [0.3.3]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v0.3.2...v0.3.3
 [0.3.4]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v0.3.3...v0.3.4
+[0.4.0]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v0.3.4...v0.4.0
