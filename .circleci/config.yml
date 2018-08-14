@@ -1,0 +1,77 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:7
+    steps:
+      # Setup source code and node modules
+      - checkout
+      - run:
+          name: Setup build Environment
+          command: |
+            echo "//registry.npmjs.org/:_authToken=${PUBLIC_NPM_TOKEN}" > ~/.npmrc
+            git config --global user.email "test@streamroot.io"
+            git config --global user.name "Jean Hum"
+      - run:
+          name: Checking out CircleCI V2 toolkit
+          command: |
+            git clone git@github.com:streamroot/toolkit.git
+      - restore_cache:
+          name: Restoring cached NodeJS modules.
+          key: node_modules
+      - run:
+          name: Install/Updating NodeJS dependencies.
+          command: npm update
+      - save_cache:
+          name: Saving installed NodeJS modules.
+          key: node_modules
+          paths:
+            - node_modules
+
+      # Build section
+      - run:
+          name: Generating active build configuration
+          command: node toolkit/circleci2/build-active-conf.js
+      - run:
+          name: Running tests
+          command: |
+            mkdir -p build/info
+            npm test > build/info/test.log
+
+      # Production build
+      - run:
+          name: Override production dependencies
+          command: node toolkit/circleci2/override-dependencies.js
+      - run:
+          name: Production build
+          command: |
+            npm run build
+            cp README.md dist/README.md
+      - run:
+          name: Post-process production build
+          command: |
+            node toolkit/circleci2/post-process-js-dist.js
+            mkdir -p build/release
+            mv dist/* build/release
+
+      # Remote deployments
+      - run:
+          name: Deploy to S3
+          command: |
+            node toolkit/circleci2/deploy-build-to-s3.js
+      - run:
+          name: Deploy to NPM
+          command: |
+            node toolkit/circleci2/deploy-build-to-npm.js
+
+      # Finalizing build
+      - run:
+          name: Update and sync branches
+          command: |
+            node toolkit/circleci2/update-repo.js
+            node toolkit/circleci2/sync-branches.js
+            node toolkit/circleci2/notify-changes.js
+
+      - store_artifacts:
+          path: build
+          destination: /
