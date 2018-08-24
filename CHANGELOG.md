@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Fixed
+- Alternative MIME-type `application/vnd.apple.mpegurl` for HLS manifest not matched.
 
 ## [1.0.0] - 2018-08-14
 ### CI
