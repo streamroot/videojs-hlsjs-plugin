@@ -13,9 +13,9 @@
     "url": "git@github.com:streamroot/videojs-hlsjs-plugin"
   },
   "scripts": {
-    "build": "webpack --progress",
-    "build:dev": "cross-env NODE_ENV=development webpack --progress --watch",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server -d",
+    "build": "webpack --env.production",
+    "build:debug": "webpack --env.production --env.debug",
+    "dev": "webpack-dev-server --env.development",
     "test": "npm run test:lint",
     "test:lint": "eslint lib/"
   },
