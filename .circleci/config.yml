@@ -38,6 +38,11 @@ jobs:
             mkdir -p build/info
             npm test > build/info/test.log
 
+      # Deploy checkpoint
+      - run:
+          name: Deploy checkpoint
+          command: node toolkit/circleci2/deploy-checkpoint.js
+
       # Production build
       - run:
           name: Override production dependencies
