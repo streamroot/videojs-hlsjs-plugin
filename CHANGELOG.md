@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [1.0.2] - 2018-09-06
 ### Changed
 - Synchronize tooling with other plugins.
 
@@ -96,3 +98,4 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 [0.4.0]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v0.3.4...v0.4.0
 [1.0.0]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v0.4.0...v1.0.0
 [1.0.1]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v1.0.0...v1.0.1
+[1.0.2]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v1.0.1...v1.0.2
