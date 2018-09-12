@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Fixed
+- Seeking issues with Brightcove's DVRUX plugin.
 
 ## [1.0.2] - 2018-09-06
 ### Changed
