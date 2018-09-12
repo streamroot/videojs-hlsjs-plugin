@@ -1,6 +1,6 @@
 {
   "name": "videojs-hlsjs-plugin",
-  "version": "1.0.2-beta.154",
+  "version": "1.0.3-beta.159",
   "main": "./lib/main.js",
   "homepage": "www.streamroot.io",
   "author": {
