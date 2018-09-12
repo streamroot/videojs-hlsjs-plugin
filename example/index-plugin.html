@@ -7,6 +7,10 @@
     <link href="http://vjs.zencdn.net/6.6.3/video-js.css" rel="stylesheet">
     <script src="http://vjs.zencdn.net/6.6.3/video.js"></script>
 
+    <!-- Brightcove DVRUX plugin -->
+    <!-- <link href="//players.brightcove.net/videojs-live-dvrux/1/videojs-live-dvrux.min.css" rel="stylesheet"> -->
+    <!-- <script src="//players.brightcove.net/videojs-live-dvrux/1/videojs-live-dvrux.min.js"></script> -->
+
     <script src="../dist/videojs-hlsjs-plugin.js"></script>
 </head>
 <body>
@@ -21,12 +25,16 @@
               streamrootHls: {
                 hlsjsConfig: {
                   // Your Hls.js config
-                  debug: true,
                 },
               }
             }
         };
         var player = videojs('example-video', options);
+
+        // Activate Brightcove's DVRUX plugin
+        // player.ready(function () {
+        //     player.dvrux();
+        // });
     </script>
 </body>
 </html>
