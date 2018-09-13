@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Added
+- Support for `videojs-contrib-quality-levels` plugin.
 
 ## [1.0.3] - 2018-09-12
 ### Fixed
