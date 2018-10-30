@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Fixed
+- Subtitle and audio picker not showing up on some streams.
 
 ## [1.0.4] - 2018-09-17
 ### Added
