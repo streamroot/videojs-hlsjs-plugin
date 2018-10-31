@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.0.5] - 2018-10-31
+### Fixed
+- Subtitle and audio picker not showing up on some streams.
+
 ## [1.0.4] - 2018-09-17
 ### Added
 - Support for `videojs-contrib-quality-levels` plugin.
@@ -109,3 +113,4 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 [1.0.2]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v1.0.1...v1.0.2
 [1.0.3]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v1.0.2...v1.0.3
 [1.0.4]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v1.0.3...v1.0.4
+[1.0.5]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v1.0.4...v1.0.5
