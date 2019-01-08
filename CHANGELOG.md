@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Changed
+- Bump bunded `hls.js` version to `0.12.2`.
 
 ## [1.0.5] - 2018-10-31
 ### Fixed
