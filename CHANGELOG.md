@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [1.0.6] - 2019-01-08
 ### Changed
 - Bump bunded `hls.js` version to `0.12.2`.
 
@@ -116,3 +118,4 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 [1.0.3]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v1.0.2...v1.0.3
 [1.0.4]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v1.0.3...v1.0.4
 [1.0.5]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v1.0.4...v1.0.5
+[1.0.6]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v1.0.5...v1.0.6
