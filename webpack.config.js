@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 const { version } = require('./package.json');
 
@@ -39,11 +40,18 @@ module.exports = env => {
       new webpack.LoaderOptionsPlugin({
           minimize: true,
           debug: false,
-      }),
-      new webpack.optimize.UglifyJsPlugin({
-          compress: {
+      })
+    );
+  }
+
+  return {
+    mode: 'production',
+    optimization: {
+      minimizer: [
+        new UglifyJsPlugin({
+          uglifyOptions: {
+            compress: {
               warnings: false,
-              screw_ie8: true,
               conditionals: true,
               unused: true,
               comparisons: true,
@@ -52,17 +60,16 @@ module.exports = env => {
               evaluate: true,
               if_return: true,
               join_vars: true,
-              drop_console: !isDebug,
-          },
-          mangle: true,
-          output: {
-              comments: false,
-          },
-      })
-    );
-  }
-
-  return {
+              drop_console: !isDebug
+            },
+            mangle: true,
+            output: {
+              comments: false
+            }
+          }
+        })
+      ]
+    },
     entry: path.resolve(sourcePath, 'main.js'),
     output: {
       path: distPath,
