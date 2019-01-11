@@ -1,6 +1,6 @@
 {
   "name": "videojs-hlsjs-plugin",
-  "version": "1.0.6-beta.176",
+  "version": "1.0.7-beta.180",
   "main": "./lib/main.js",
   "homepage": "www.streamroot.io",
   "author": {
@@ -32,8 +32,9 @@
     "eslint-config-airbnb-base": "12.1.0",
     "eslint-plugin-import": "2.8.0",
     "uglify-js": "2.6.0",
-    "video.js": "^5.20.5",
-    "webpack": "3.8.1",
-    "webpack-dev-server": "2.11.2"
+    "uglifyjs-webpack-plugin": "2.1.1",
+    "webpack": "4.28.3",
+    "webpack-cli": "3.2.1",
+    "webpack-dev-server": "3.1.14"
   }
 }
