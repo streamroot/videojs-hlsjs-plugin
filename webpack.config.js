@@ -19,7 +19,7 @@ module.exports = env => {
   }
 
   const isDev = nodeEnv === 'development';
-  const isDebug = env && env.debug;
+  const isDebug = env && env.debug || isDev;
 
   const plugins = [
       new webpack.DefinePlugin({
