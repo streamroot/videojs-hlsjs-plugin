@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Changed
+- Move text track bridge initialization to `playing` where all `TextTrack` are populated to media element by `Hls.js`.
+
+### Fixed
+- Missing `captions` track on switcher because `hls.subtitleTracks` does not contain them.
+- Same-label same-language `caption` and `subtitle` track get switched together.
 
 ## [1.0.6] - 2019-01-08
 ### Changed
