@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [1.0.8] - 2019-01-24
 ### Fixed
 - `TextTracks` added after video starts playing is not updated properly.
 
@@ -130,3 +132,4 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 [1.0.5]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v1.0.4...v1.0.5
 [1.0.6]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v1.0.5...v1.0.6
 [1.0.7]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v1.0.6...v1.0.7
+[1.0.8]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v1.0.7...v1.0.8
