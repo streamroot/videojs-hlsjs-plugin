@@ -97,4 +97,7 @@ You can remove the hook by:
 videojs.Html5Hlsjs.removeHook('beforeinitialize', callback);
 ```
 
+### Caption configurations
+In `hls.js` if caption positioning information is not provided in `WebVTT` it will be hard coded into a certain location on-screen. We provide a custom option to allow users to override property of the caption's cues: https://developer.mozilla.org/en-US/docs/Web/API/VTTCue
+
 You can add as many `beforeinitialize` hooks as necessary by calling `videojs.Html5Hlsjs.addHook` several times.
