@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Fixed
+- Plugin-style configuration not applied when plugin is activated before `tech` is attached.
 
 ## [1.0.9] - 2019-02-19
 ### Added
