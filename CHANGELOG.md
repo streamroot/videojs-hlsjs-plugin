@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Changed
+- Bump bunded `hls.js` version to `0.12.2`.
+
+### Fixed
+- Missing module exports after `webpack` update.
 
 ## [1.0.10] - 2019-02-26
 ### Fixed
