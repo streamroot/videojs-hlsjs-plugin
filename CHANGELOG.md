@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Fixed
+- Export as regular web library to avoid compatability problem with `require.js`.
 
 ## [1.0.11] - 2019-04-24
 ### Changed
