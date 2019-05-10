@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [1.0.12] - 2019-05-10
 ### Fixed
 - Export as regular web library to avoid compatability problem with `require.js`.
 
@@ -153,3 +155,4 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 [1.0.9]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v1.0.8...v1.0.9
 [1.0.10]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v1.0.9...v1.0.10
 [1.0.11]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v1.0.10...v1.0.11
+[1.0.12]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v1.0.11...v1.0.12
