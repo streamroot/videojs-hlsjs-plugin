@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Added
+- Emulation of `videojs-contrib-hls` emitting `loadedmetadata` after loading first segment for plugin compatability.
 
 ## [1.0.12] - 2019-05-10
 ### Fixed
