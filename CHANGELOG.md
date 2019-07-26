@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.0.13] - 2019-07-26
+### Added
+- Emulation of `videojs-contrib-hls` emitting `loadedmetadata` after loading first segment for plugin compatability.
+
 ## [1.0.12] - 2019-05-10
 ### Fixed
 - Export as regular web library to avoid compatability problem with `require.js`.
@@ -156,3 +160,4 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 [1.0.10]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v1.0.9...v1.0.10
 [1.0.11]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v1.0.10...v1.0.11
 [1.0.12]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v1.0.11...v1.0.12
+[1.0.13]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v1.0.12...v1.0.13
