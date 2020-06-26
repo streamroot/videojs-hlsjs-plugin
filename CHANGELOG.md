@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Fixed
+- Supports `videojs-hls-quality-selector` plugin.
 
 ## [1.0.14] - 2020-06-08
 ### Changed
