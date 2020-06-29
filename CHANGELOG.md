@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.0.15] - 2020-06-29
+### Fixed
+- Supports `videojs-hls-quality-selector` plugin.
+
 ## [1.0.14] - 2020-06-08
 ### Changed
 - Update `hls.js` to `0.13.2`.
@@ -166,3 +170,4 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 [1.0.12]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v1.0.11...v1.0.12
 [1.0.13]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v1.0.12...v1.0.13
 [1.0.14]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v1.0.13...v1.0.14
+[1.0.15]: https://github.com/streamroot/videojs-hlsjs-plugin/compare/v1.0.14...v1.0.15
