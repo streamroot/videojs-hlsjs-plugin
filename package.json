@@ -13,8 +13,9 @@
     "url": "git@github.com:streamroot/videojs-hlsjs-plugin"
   },
   "scripts": {
-    "build": "webpack --env.production",
-    "build:debug": "webpack --env.production --env.debug",
+    "build": "webpack --env.production && npm run cjs2adapt",
+    "build:debug": "webpack --env.production --env.debug && npm run cjs2adapt",
+    "cjs2adapt": "cat ./dist/videojs-hlsjs-plugin.js ./lib/cjs2-adapter.js >> ./dist/out.js && mv ./dist/out.js ./dist/videojs-hlsjs-plugin.js",
     "dev": "webpack-dev-server --env.development",
     "test": "npm run test:lint",
     "test:lint": "eslint lib/"
