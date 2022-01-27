@@ -71,8 +71,6 @@ module.exports = env => {
     },
     entry: path.resolve(sourcePath, 'main.js'),
     output: {
-      library: 'hlsSourceHandler',
-      libraryTarget: 'window',
       path: distPath,
       filename: 'videojs-hlsjs-plugin.js'
     },
