@@ -51,7 +51,8 @@ jobs:
           name: Production build
           command: |
             npm run build
-            cp README.md dist/README.md
+            cp README_NPM.md dist/README.md
+            cp types.d.ts dist/types.d.ts
       - run:
           name: Post-process production build
           command: |
