@@ -22,7 +22,7 @@
     "test:lint": "eslint lib/"
   },
   "dependencies": {
-    "hls.js": "0.13.2"
+    "hls.js": "~1.3"
   },
   "devDependencies": {
     "ajv": "^6.4.0",
